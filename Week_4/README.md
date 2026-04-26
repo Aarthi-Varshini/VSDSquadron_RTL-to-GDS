@@ -32,7 +32,7 @@ The ORFS design environment was set-up to work with the user_project_wrapper. Fo
 #### Directory Created:
 ![Directory](Screenshots/Directory.png)
 #### Config file used:
-![Config file](Screenshots/config_file.png)
+![Config file](Screenshots/Config_file.png)
 #### Integration of RTL files into the flow:
 The VERILOG_FILES variable used in the config.mk file includes all the verilog files available in the rtl folder. 
 Both the modules(user_project_la_example, user_project_gpio_example) are instantiated inside the **`ifdef** directive, so in order to include these modules **GPI0_TESTING** and **LA_TESTING** are set to **1** in the defs.v file whereas the debug_regs will be instantiated always.
